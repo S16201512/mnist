@@ -83,16 +83,27 @@ for i in range(int(epoch_num)):
 
 print(train_acc_list)
 print(test_acc_list)
-x_dim = np.array(np.arange(0, len(train_loss_list)))
-plt.plot(x_dim, train_loss_list, label='train line')
-# plt.plot(x_dim, test_acc_list, color='red', linewidth=1.0, linestyle='--', label='test line')
-# plt.legend(handles=[train_line, test_line], labels=['train', 'test'], loc='best')
+# x_dim = np.array(np.arange(0, len(train_loss_list)))
+# plt.plot(x_dim, train_loss_list, label='train line')
+# plt.xlabel('iteration')
+# plt.ylabel('train Loss')
+#
+# # 设置坐标轴刻度
+# my_x_ticks = np.arange(0, len(train_loss_list), 20)
+# my_y_ticks = np.arange(0, 2, 0.1)
+# plt.xticks(my_x_ticks)
+# plt.yticks(my_y_ticks)
+# plt.show()
+
+
+x_dim = np.array(np.arange(0, len(test_acc_list)))
+plt.plot(x_dim, test_acc_list, label='test accuracy')
 plt.xlabel('iteration')
 plt.ylabel('train Loss')
 
 # 设置坐标轴刻度
-my_x_ticks = np.arange(0, len(train_loss_list), 20)
-my_y_ticks = np.arange(0, 2, 0.1)
+my_x_ticks = np.arange(0, len(test_acc_list), 5)
+my_y_ticks = np.arange(0, 1, 0.1)
 plt.xticks(my_x_ticks)
 plt.yticks(my_y_ticks)
 plt.show()
