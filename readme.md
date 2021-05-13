@@ -14,9 +14,9 @@
     python ./script/main.py
     
 ## 训练损失结果图
-![image](https://github.com/S16201512/mnist/blob/master/Figure_1.png)
+![image](https://github.com/S16201512/mnist/blob/master/result/Figure_1.png)
 
 
 ## 测试准确度结果图
-![image](https://github.com/S16201512/mnist/blob/master/Figure_1.png)
+![image](https://github.com/S16201512/mnist/blob/master/result/test_accuracy.png)
     
